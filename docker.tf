@@ -37,7 +37,8 @@ resource "aws_security_group" "allow_all_docker" {
     lifecycle {
         create_before_destroy = true
     }
-  tags = {
+
+    tags = {
         Name = "allow_all_docker"
     }
 }
