@@ -1,6 +1,6 @@
 resource "aws_instance" "docker" {
     ami = local.ami_id # Replace with your desired AMI ID
-    instance_type = "t3.small"
+    instance_type = "c7i-flex.large"    # "t3.small"
     vpc_security_group_ids = [aws_security_group.allow_all_docker.id]
 
     # need more for terraform
